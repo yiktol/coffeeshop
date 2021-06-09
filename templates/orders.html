@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+
+<table id="customers">
+  <tr>
+    <th>Data</th>
+    <th>Count</th>
+    </tr>
+  <tr>
+    <td>Number of Orders fullfilled:</td>
+    <td>{{ApproximateNumberOfMessagesNotVisible}}</td>
+  </tr>
+  <tr>
+    <td>Number of Orders Going into the Queue:</td>
+    <td>{{ApproximateNumberOfMessagesDelayed}}</td>
+  </tr>
+  <tr>
+    <td>Number of Orders the Process of being deliver to Customer:</td>
+    <td>{{ApproximateNumberOfMessages}}</td>
+  </tr>
+  <tr>
+    <td>Number of Orders recorded in the Database:</td>
+    <td>{{dynamoItems}}</td>
+  </tr>
+</table>
+
+</body>
+<script> 
+    function timedRefresh(timeoutPeriod) {
+      setTimeout("location.reload(true);",timeoutPeriod);
+    }    
+    window.onload = timedRefresh(1000);   
+</script>
+</html>

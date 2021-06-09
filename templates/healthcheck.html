@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Container Metadata</h2>
+
+<table>
+  <tr>
+    <th>Metadata</th>
+    <th>Value</th>
+  </tr>
+  {% if LaunchType %}
+  <tr>
+    <td>Launch Type</td>
+    <td>{{LaunchType}}</td>
+  </tr>
+  {% endif %}
+  <tr>
+    <td>Container Id</td>
+    <td>{{ContainerId}}</td>
+  </tr>
+  {% if PublicIP %}
+  <tr>
+    <td>Public IP Address</td>
+    <td>{{PublicIP}}</td>
+  </tr>
+  {% endif %}
+  <tr>
+    <td>Private IP Address</td>
+    <td>{{PrivateIP}}</td>
+  </tr>
+  <tr>
+    <td>Availability Zone</td>
+    <td>{{AZ}}</td>
+  </tr>
+  {% if HostPort %}
+  <tr>
+    <td>Host Port</td>
+    <td>{{HostPort}}</td>
+  </tr>
+  {% endif %}
+  {% if ContainerPort %}
+  <tr>
+    <td>Container Port</td>
+    <td>{{ContainerPort}}</td>
+  </tr>
+  {% endif %}
+</table>
+
+</body>
+</html>

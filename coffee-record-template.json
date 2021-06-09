@@ -1,0 +1,30 @@
+{
+    "Customer": {
+        "DataType": "String",
+        "StringValue": "{{Customer}}"
+    },
+    "SalesId": {
+        "DataType": "String",
+        "StringValue": "{{SalesId}}"
+    },
+    "Timestamp": {
+        "DataType": "String",
+        "StringValue": "{{Timestamp}}"
+    },
+    "Coffee": {
+        "DataType": "String",
+        "StringValue": "{{Coffee}}"
+    },
+    "Milk": {
+        "DataType": "String",
+        "StringValue": "{{Milk}}"
+    },
+    "Size": {
+        "DataType": "String",
+        "StringValue": "{{Size}}"
+    },
+    "Quantity": {
+        "DataType": "Number",
+        "StringValue": "{{Quantity}}"
+    }
+}

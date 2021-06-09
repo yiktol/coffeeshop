@@ -1,0 +1,18 @@
+{
+    "FC": {
+        "Name": "Full Cream",
+        "Price": "0.00"
+    },
+    "SK":{
+        "Name": "Skinny",
+        "Price": "0.00"
+    },
+    "SY":{
+        "Name": "Soy",
+        "Price": "0.50"
+    },
+    "AD":{
+        "Name": "Almond",
+        "Price": "1.00"
+    }
+}

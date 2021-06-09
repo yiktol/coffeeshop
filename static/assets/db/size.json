@@ -1,0 +1,14 @@
+{
+    "S": {
+        "Name": "Small",
+        "Price": "0.00"
+    },
+    "R": {
+        "Name": "Regular",
+        "Price": "0.50"
+    },
+    "L": {
+        "Name": "Large",
+        "Price": "1.00"
+    }
+}

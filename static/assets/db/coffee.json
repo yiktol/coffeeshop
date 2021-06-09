@@ -1,0 +1,26 @@
+{
+    "FW": {
+        "Name": "Flat White",
+        "Price": "5.00"
+    },
+    "AM":{
+        "Name": "Americano",
+        "Price": "4.50"
+    },
+    "MA":{
+        "Name": "Macchiato",
+        "Price": "5.00"
+    },
+    "CP":{
+        "Name": "Cappuccino",
+        "Price": "4.50"
+    },
+    "LT":{
+        "Name": "Latte",
+        "Price": "4.50"
+    },
+    "MC":{
+        "Name": "Mocha",
+        "Price": "4.50"
+    }
+}
